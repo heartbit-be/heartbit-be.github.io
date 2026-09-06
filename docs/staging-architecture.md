@@ -7,7 +7,7 @@ See [Coolify staging](coolify-staging.md) for identifiers, build settings, and o
 ```mermaid
 flowchart LR
     Browser[Public browser] -->|HTTPS port 443| Proxy[Traefik on VPS]
-    DNS[sslip.io DNS] -. resolves hostname to 46.225.75.37 .-> Browser
+    DNS[sslip.io DNS] -.->|"Resolves hostname to 46.225.75.37"| Browser
     Proxy -->|HTTP port 80 on Docker network| Nginx[Staging Nginx container]
     Nginx --> Files[Astro static build output]
 ```

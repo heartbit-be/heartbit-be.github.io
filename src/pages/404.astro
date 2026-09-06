@@ -1,0 +1,20 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHeading from '../components/PageHeading.astro';
+---
+
+<Layout
+  title="Page not found"
+  description="This path doesn’t lead anywhere. Return to Heartbit and choose another route."
+>
+  <PageHeading
+    eyebrow="404 / OUTSIDE THE MAP"
+    title="A path less travelled."
+    description="There’s no page here. Let’s get you back to somewhere familiar."
+  />
+  <section class="content-section">
+    <a class="pixel-button" href="/"
+      >Back to the start <span aria-hidden="true">→</span></a
+    >
+  </section>
+</Layout>

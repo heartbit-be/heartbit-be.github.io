@@ -1,0 +1,135 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PixelHeart from '../components/PixelHeart.astro';
+import { shops } from '../data/site';
+---
+
+<Layout
+  title="Good software. Full heart."
+  description="Heartbit is the independent practice of Laurens. Software architecture, software engineering, AI engineering, and 3D printing."
+>
+  <section class="pocket-screen" aria-labelledby="hero-title">
+    <div class="screen-bar">
+      <span>HEARTBIT / A PERSONAL ADVENTURE</span><span
+        class="lives"
+        aria-hidden="true"><PixelHeart /><PixelHeart /><PixelHeart /></span
+      >
+    </div>
+    <div class="hero">
+      <div>
+        <p class="eyebrow">DEVELOPER. MAKER. HUMAN.</p><h1 id="hero-title">
+          Good software.<br />Full heart.
+        </h1><p class="hero-copy">
+          I’m Laurens. I build software and follow interesting ideas wherever
+          they lead.
+        </p><a class="pixel-button" href="/work/"
+          >Explore my work <span aria-hidden="true">→</span></a
+        >
+      </div>
+      <div class="heart-display">
+        <button
+          class="heart-button"
+          type="button"
+          aria-label="Give the heart a beat"><PixelHeart large /></button
+        ><span class="heart-shadow" aria-hidden="true"></span><p
+          class="eyebrow"
+          data-heart-caption
+        >
+          A LITTLE HEART.<br />A LOT OF BITS.
+        </p><span class="sr-only" role="status" data-heart-status></span>
+      </div>
+    </div>
+    <div class="dialogue">
+      <span class="speaker">LAURENS</span><p>
+        Some projects start with a brief.<br />Others start with “what if…”
+      </p>
+    </div>
+    <nav class="chapters" aria-label="Explore Heartbit">
+      <a href="/work/"
+        ><span class="eyebrow">01 / PROJECTS</span><span>Things I’ve built</span
+        ><span aria-hidden="true">→</span></a
+      ><a href="/about/"
+        ><span class="eyebrow">02 / THE PERSON</span><span
+          >A little about me</span
+        ><span aria-hidden="true">→</span></a
+      ><a href="/services/"
+        ><span class="eyebrow">03 / SERVICES</span><span>Choose your quest</span
+        ><span aria-hidden="true">→</span></a
+      >
+    </nav>
+  </section>
+  <section class="intro section">
+    <div>
+      <p class="eyebrow">THE PERSON BEHIND HEARTBIT</p><h2>I’m Laurens.</h2>
+    </div><div>
+      <p>
+        I work with software and physical objects. Heartbit is where
+        engineering, curiosity, and making come together.
+      </p><a class="text-link" href="/about/">A little about me ↗</a>
+    </div>
+  </section>
+  <section class="section">
+    <div class="section-heading">
+      <h2>Choose your quest</h2><a class="text-link" href="/services/"
+        >Explore services ↗</a
+      >
+    </div><div class="service-summary">
+      <div>
+        <p class="eyebrow">01 / SOFTWARE</p><ul>
+          <li>Software architecture</li><li>Software engineering</li><li>
+            AI engineering
+          </li>
+        </ul><p>From technical direction to working software.</p>
+      </div><div>
+        <p class="eyebrow">02 / PHYSICAL OBJECTS</p><h3>3D printing</h3><p>
+          From a digital model to something you can hold.
+        </p><a class="text-link" href="/contact/?interest=3d-printing"
+          >Discuss a print ↗</a
+        >
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="section-heading">
+      <h2>The marketplace</h2><a class="text-link" href="/shops/"
+        >Shops & links ↗</a
+      >
+    </div><div class="shop-grid">
+      {
+        shops.map((shop) => (
+          <div class="shop-row">
+            <h3>{shop.name}</h3>
+            {shop.url ? (
+              <a class="text-link" href={shop.url}>
+                Visit shop ↗
+              </a>
+            ) : (
+              <span class="coming-soon">Coming soon</span>
+            )}
+          </div>
+        ))
+      }
+    </div>
+  </section>
+  <section class="contact-strip">
+    <div>
+      <p class="eyebrow">LET’S WORK TOGETHER</p><h2>What are you making?</h2>
+    </div><a class="pixel-button" href="/contact/"
+      >Get in touch <span aria-hidden="true">→</span></a
+    >
+  </section>
+</Layout>
+<script>
+  const button = document.querySelector<HTMLButtonElement>('.heart-button');
+  const caption = document.querySelector<HTMLElement>('[data-heart-caption]');
+  const status = document.querySelector<HTMLElement>('[data-heart-status]');
+  button?.addEventListener('click', () => {
+    if (!button || !caption || !status) return;
+    button.classList.remove('beating');
+    requestAnimationFrame(() =>
+      requestAnimationFrame(() => button.classList.add('beating')),
+    );
+    caption.textContent = 'STILL HERE. STILL HUMAN.';
+    status.textContent = 'Heartbit has a heartbeat.';
+  });
+</script>

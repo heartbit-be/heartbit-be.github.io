@@ -1,0 +1,14 @@
+---
+interface Props {
+  eyebrow: string;
+  title: string;
+  description?: string;
+}
+const { eyebrow, title, description } = Astro.props;
+---
+
+<header class="page-heading">
+  <a class="back-link" href="/">← Back to the start</a><p class="eyebrow">
+    {eyebrow}
+  </p><h1>{title}</h1>{description && <p>{description}</p>}
+</header>

@@ -1,0 +1,35 @@
+---
+import { getCollection, render } from 'astro:content';
+import type { InferGetStaticPropsType } from 'astro';
+import Layout from '../../layouts/Layout.astro';
+export async function getStaticPaths() {
+  return (await getCollection('projects')).map((project) => ({
+    params: { id: project.id },
+    props: { project },
+  }));
+}
+type Props = InferGetStaticPropsType<typeof getStaticPaths>;
+const { project } = Astro.props;
+const { Content } = await render(project);
+---
+
+<Layout title={project.data.title} description={project.data.summary}>
+  <header class="page-heading">
+    <a class="back-link" href="/work/">← Back to the projects</a><p
+      class="eyebrow"
+    >
+      {project.data.category}
+    </p><h1>{project.data.title}</h1><p>{project.data.summary}</p><p
+      class="project-tags"
+    >
+      {project.data.tags.join(' / ')}
+    </p>
+  </header>
+  <article class="content-section prose"><Content /></article>
+  <section class="contact-strip">
+    <h2>Working on something similar?</h2><a
+      class="pixel-button"
+      href="/contact/">Get in touch <span aria-hidden="true">→</span></a
+    >
+  </section>
+</Layout>

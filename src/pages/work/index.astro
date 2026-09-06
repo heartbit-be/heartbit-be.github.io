@@ -1,0 +1,39 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import PageHeading from '../../components/PageHeading.astro';
+const projects = (await getCollection('projects')).sort(
+  (a, b) => a.data.order - b.data.order,
+);
+---
+
+<Layout
+  title="Things I’ve built"
+  description="A look inside the Heartbit workshop: software tools, automation, and experiments in 3D printing."
+>
+  <PageHeading
+    eyebrow="01 / PROJECTS"
+    title="Things I’ve built."
+    description="A few projects from the workshop. Some live on a screen. Some become things you can hold."
+  />
+  <section class="content-section work-list" aria-label="Projects">
+    {
+      projects.map((project, i) => (
+        <a class="project-link" href={`/work/${project.id}/`}>
+          <>
+            <span class="project-number">0{i + 1}</span>
+            <div>
+              <>
+                <p class="eyebrow">{project.data.category}</p>
+                <h2>{project.data.title}</h2>
+                <p>{project.data.summary}</p>
+                <p class="project-tags">{project.data.tags.join(' / ')}</p>
+              </>
+            </div>
+            <span aria-hidden="true">↗</span>
+          </>
+        </a>
+      ))
+    }
+  </section>
+</Layout>

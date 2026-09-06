@@ -1,0 +1,65 @@
+---
+import '@fontsource/silkscreen/latin-400.css';
+import '@fontsource/ibm-plex-mono/latin-400.css';
+import '@fontsource/space-grotesk/latin-400.css';
+import '@fontsource/space-grotesk/latin-500.css';
+import '../styles/global.css';
+import PixelHeart from '../components/PixelHeart.astro';
+interface Props {
+  title: string;
+  description: string;
+}
+const { title, description } = Astro.props;
+const path = Astro.url.pathname;
+const links = [
+  ['/work/', 'Work'],
+  ['/about/', 'About'],
+  ['/services/', 'Services'],
+  ['/shops/', 'Shops'],
+  ['/contact/', 'Contact'],
+];
+const staging = import.meta.env.PUBLIC_SITE_ENV === 'staging';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#d6dea9" />
+    {staging && <meta name="robots" content="noindex, nofollow" />}
+    <link rel="canonical" href={new URL(path, Astro.site)} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title} | Heartbit</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="/" aria-label="Heartbit home"
+          ><PixelHeart /><span>heartbit</span></a
+        >
+        <nav aria-label="Main navigation">
+          {
+            links.map(([href, label]) => (
+              <a
+                href={href}
+                aria-current={path.startsWith(href) ? 'page' : undefined}
+              >
+                {label}
+              </a>
+            ))
+          }
+        </nav>
+      </header>
+      <main id="main"><slot /></main>
+      <footer class="site-footer">
+        <a class="footer-mark" href="/"><PixelHeart /> HEART + BIT = HEARTBIT</a
+        ><span>Software & things you can hold.</span><a href="/contact/"
+          >Say hello ↗</a
+        >
+      </footer>
+    </div>
+  </body>
+</html>

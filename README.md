@@ -32,13 +32,13 @@ Fonts are bundled locally through Fontsource. No UI framework or form service is
 
 ## Staging
 
-See [Coolify handoff](docs/coolify-staging.md). Build-time settings:
+Staging is live at https://heartbit-staging.46.225.75.37.sslip.io. See [Coolify setup](docs/coolify-staging.md) and [staging architecture](docs/staging-architecture.md). Build-time settings:
 
 ```sh
-SITE_URL=https://staging.heartbit.be PUBLIC_SITE_ENV=staging npm run build
+SITE_URL=https://heartbit-staging.46.225.75.37.sslip.io PUBLIC_SITE_ENV=staging npm run build
 ```
 
-`PUBLIC_CONTACT_EMAIL` optionally overrides the public contact address. Staging builds include a `noindex, nofollow` robots meta tag. Configure the equivalent HTTP header in Coolify too.
+`PUBLIC_CONTACT_EMAIL` optionally overrides the public contact address. Staging builds include a `noindex, nofollow` robots meta tag. Coolify also adds the equivalent HTTP response header.
 
 ## Production
 
@@ -51,5 +51,5 @@ The check workflow only validates code. It cannot deploy to GitHub Pages. At lau
 - Review the provisional biography, service descriptions, and two initial project writeups.
 - Add approved project images and any further work worth showing.
 - Review Pocket in desktop/mobile browsers and with keyboard navigation.
-- Configure and verify staging DNS, HTTPS, static routing, and noindex headers.
+- Recheck staging HTTPS, static routing, and noindex headers after deployment changes.
 - Set up the production deployment workflow when the redesign is approved.

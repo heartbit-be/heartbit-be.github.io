@@ -1,0 +1,22 @@
+---
+import { contactEmail, linkedInUrl } from '../data/site';
+import Arrow from './Arrow.astro';
+
+interface Props {
+  emailLabel?: string;
+  subject?: string;
+}
+const { emailLabel = 'Email me', subject } = Astro.props;
+const emailLink = `mailto:${contactEmail}${subject ? `?subject=${encodeURIComponent(subject)}` : ''}`;
+---
+
+<div class="actions">
+  <a class="pixel-button" href={emailLink}>{emailLabel} <Arrow /></a>
+  {
+    linkedInUrl && (
+      <a class="text-link" href={linkedInUrl}>
+        LinkedIn <Arrow />
+      </a>
+    )
+  }
+</div>

@@ -1,0 +1,96 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHeading from '../components/PageHeading.astro';
+import ContactLinks from '../components/ContactLinks.astro';
+---
+
+<Layout
+  title="Experience"
+  description="A closer look at my work in software engineering, technical leadership, and architecture, including the renewal of a production application."
+>
+  <PageHeading
+    eyebrow="01 / SOFTWARE & TEAMS"
+    title="Experience"
+    description="A closer look at my work in software engineering, technical leadership, and architecture."
+  />
+  <section class="cv-panel" aria-labelledby="cv-title">
+    <div>
+      <h2 id="cv-title">My CV</h2>
+      <p id="cv-status">
+        Placeholder — my CV will be added here once available.
+      </p>
+    </div>
+    <div class="actions">
+      <button
+        class="pixel-button"
+        type="button"
+        disabled
+        aria-describedby="cv-status">View CV</button
+      >
+      <button
+        class="pixel-button"
+        type="button"
+        disabled
+        aria-describedby="cv-status">Download CV</button
+      >
+    </div>
+  </section>
+  <section class="section" aria-labelledby="experience-title">
+    <div class="section-heading">
+      <h2 id="experience-title">Selected experience</h2>
+    </div>
+    <p class="placeholder-note">
+      These are placeholders for my career history. Roles, clients, dates, and
+      contributions will be added with my CV.
+    </p>
+    <div class="experience-list">
+      <article class="experience-entry">
+        <p class="eyebrow">PLACEHOLDER / 01</p>
+        <div>
+          <h3>Recent engagement</h3>
+          <p>
+            Role, client, dates, and a summary of my responsibilities and
+            contributions to follow.
+          </p>
+        </div>
+      </article>
+      <article class="experience-entry">
+        <p class="eyebrow">PLACEHOLDER / 02</p>
+        <div>
+          <h3>Earlier engagement</h3>
+          <p>Role, client, dates, and a summary of relevant work to follow.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+  <section class="section" aria-labelledby="project-title">
+    <div class="section-heading">
+      <h2 id="project-title">Renewing an application</h2>
+    </div>
+    <details class="project-story">
+      <summary>Read the project story</summary>
+      <div class="prose">
+        <p>
+          An application that began as a proof of concept had become a
+          production system. As its use grew, users ran into problems and its
+          original technical choices stood in the way of requested features.
+        </p>
+        <p>
+          I gathered user issues and feature requests, developed the functional
+          and technical analysis, and designed the cloud architecture, domain
+          model, and APIs. I made the case for renewal to leadership, then
+          implemented and delivered the replacement myself.
+        </p>
+        <p>
+          The replacement improved security and user experience, made previously
+          blocked features possible, and opened the application to external
+          clients. It was designed for extension and scale.
+        </p>
+      </div>
+    </details>
+  </section>
+  <section class="contact-strip" aria-labelledby="experience-contact-title">
+    <h2 id="experience-contact-title">Let's talk about your team.</h2>
+    <ContactLinks />
+  </section>
+</Layout>

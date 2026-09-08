@@ -5,6 +5,8 @@ import '@fontsource/space-grotesk/latin-400.css';
 import '@fontsource/space-grotesk/latin-500.css';
 import '../styles/global.css';
 import PixelHeart from '../components/PixelHeart.astro';
+import Arrow from '../components/Arrow.astro';
+import { contactEmail, linkedInUrl } from '../data/site';
 interface Props {
   title: string;
   description: string;
@@ -12,11 +14,9 @@ interface Props {
 const { title, description } = Astro.props;
 const path = Astro.url.pathname;
 const links = [
-  ['/work/', 'Work'],
-  ['/about/', 'About'],
-  ['/services/', 'Services'],
-  ['/shops/', 'Shops'],
-  ['/contact/', 'Contact'],
+  ['/', 'Home'],
+  ['/experience/', 'Experience'],
+  ['/3d-printing/', '3D printing'],
 ];
 const staging = import.meta.env.PUBLIC_SITE_ENV === 'staging';
 ---
@@ -43,10 +43,7 @@ const staging = import.meta.env.PUBLIC_SITE_ENV === 'staging';
         <nav aria-label="Main navigation">
           {
             links.map(([href, label]) => (
-              <a
-                href={href}
-                aria-current={path.startsWith(href) ? 'page' : undefined}
-              >
+              <a href={href} aria-current={path === href ? 'page' : undefined}>
                 {label}
               </a>
             ))
@@ -56,9 +53,17 @@ const staging = import.meta.env.PUBLIC_SITE_ENV === 'staging';
       <main id="main"><slot /></main>
       <footer class="site-footer">
         <a class="footer-mark" href="/"><PixelHeart /> HEART + BIT = HEARTBIT</a
-        ><span>Software & things you can hold.</span><a href="/contact/"
-          >Say hello ↗</a
         >
+        <div class="footer-contact">
+          <a href={`mailto:${contactEmail}`}>{contactEmail}</a>
+          {
+            linkedInUrl && (
+              <a href={linkedInUrl}>
+                LinkedIn <Arrow />
+              </a>
+            )
+          }
+        </div>
       </footer>
     </div>
   </body>

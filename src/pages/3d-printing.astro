@@ -1,0 +1,46 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHeading from '../components/PageHeading.astro';
+import ContactLinks from '../components/ContactLinks.astro';
+---
+
+<Layout
+  title="3D printing"
+  description="Custom 3D printing with Laurens at Heartbit: printing existing models, designing from an idea, prototypes, and replacement parts."
+>
+  <PageHeading
+    eyebrow="02 / 3D PRINTING"
+    title="From an idea to a physical object"
+    description="Have a model ready to print, or an idea you need help turning into one? I can help with custom designs, prototypes, replacement parts, and printing existing models."
+  />
+  <div class="page-actions">
+    <ContactLinks
+      emailLabel="Discuss an idea"
+      subject="Heartbit: a 3D-printing idea"
+    />
+  </div>
+  <section class="printing-example" aria-labelledby="holder-title">
+    <p class="eyebrow">A CUSTOM DESIGN</p>
+    <h2 id="holder-title">A holder for everyday use</h2>
+    <div class="prose">
+      <p>
+        The parents of a young child using a feeding pump needed a holder for
+        both the pump and its feed container. It had to fit in a small backpack
+        for use on the go and attach to a crib or bed for nighttime feeds.
+      </p>
+      <p>
+        I designed, prototyped, and delivered a multi-part 3D-printed assembly
+        around those needs.
+      </p>
+    </div>
+  </section>
+  <section class="contact-strip" aria-labelledby="printing-contact-title">
+    <div>
+      <h2 id="printing-contact-title">Tell me what you have in mind.</h2>
+      <p>
+        If you already have a model, sketch, or photo, include it in your email.
+      </p>
+    </div>
+    <ContactLinks subject="Heartbit: a 3D-printing idea" />
+  </section>
+</Layout>

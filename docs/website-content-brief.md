@@ -52,9 +52,11 @@ Owner-reported outcomes: improved security and user experience; previously block
 
 ## Printing example: feeding-pump holder
 
-Parents of a young child using a feeding pump wanted an easy-to-use holder for both the pump and its bottle or container. They needed it to fit in a small backpack for feeding on the go and attach easily to a crib or bed for nighttime feeds.
+Parents of a toddler using a feeding pump wanted an easy-to-use holder for both the pump and its bottle or container. They wanted it to fit in a small backpack for feeding on the go and attach easily to a crib or bed for nighttime feeds.
 
 Laurens designed, prototyped, and delivered a multi-part 3D-printed assembly. Photos have not been supplied. Proposed copy should describe the design and delivery without inventing validation, measured outcomes, or identifying details.
+
+Laurens confirms that they also decided to open-source the model and make it available for free to other parents in a similar situation. Link to the [model on MakerWorld](https://makerworld.com/en/models/1308879-holder-for-flocare-infinity-feeding-pump-bottle#profileId-1342777).
 
 ## AI wording refinement
 

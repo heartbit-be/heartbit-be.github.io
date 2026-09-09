@@ -86,9 +86,13 @@ Action: Discuss an idea
 
 ### A holder for everyday use
 
-The parents of a young child using a feeding pump needed a holder for both the pump and its feed container. It had to fit in a small backpack for use on the go and attach to a crib or bed for nighttime feeds.
+The parents of a toddler using a feeding pump wanted a holder for both the pump and its feed container. It had to fit in a small backpack for use on the go and attach to a crib or bed for nighttime feeds.
 
 I designed, prototyped, and delivered a multi-part 3D-printed assembly around those needs.
+
+We also decided to open-source the model and make it available for free to other parents in a similar situation.
+
+Action: [Find the model on MakerWorld](https://makerworld.com/en/models/1308879-holder-for-flocare-infinity-feeding-pump-bottle#profileId-1342777)
 
 [Optional photo of the assembly, if supplied.]
 

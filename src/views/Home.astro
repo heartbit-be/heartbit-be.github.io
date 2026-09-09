@@ -3,16 +3,26 @@ import Layout from '../layouts/Layout.astro';
 import PixelHeart from '../components/PixelHeart.astro';
 import Arrow from '../components/Arrow.astro';
 import ContactLinks from '../components/ContactLinks.astro';
-import { capabilities } from '../data/site';
+import { translations, pageUrl, type Locale } from '../i18n';
+interface Props {
+  lang: Locale;
+  automatic?: boolean;
+}
+const { lang, automatic = false } = Astro.props;
+const all = translations[lang];
+const t = all.home;
 ---
 
 <Layout
-  title="Laurens · Software engineer & technical lead"
-  description="I'm Laurens, a software engineer and technical lead. Full-stack development, cloud architecture, and AI engineering. Based in Tienen, Belgium; happy working remotely."
+  lang={lang}
+  page=""
+  automatic={automatic}
+  title={t.title}
+  description={t.description}
 >
   <section class="pocket-screen" aria-labelledby="hero-title">
     <div class="screen-bar">
-      <span>HEARTBIT / SOFTWARE & MAKING</span>
+      <span>{t.screen}</span>
       <span class="lives" aria-hidden="true">
         <PixelHeart /><PixelHeart /><PixelHeart />
       </span>
@@ -20,31 +30,32 @@ import { capabilities } from '../data/site';
     <div class="hero">
       <div>
         <h1 id="hero-title">
-          I'm Laurens,<span class="hero-role">
-            a software engineer and technical lead.
+          {t.greeting}<span class="hero-role">
+            {t.role}
           </span>
         </h1>
         <p class="hero-copy">
-          I like figuring out how a system should fit together, building it, and
-          helping the team along the way. My work spans full-stack development,
-          cloud architecture, and AI engineering.
+          {t.intro}
         </p>
         <div class="actions">
-          <a class="pixel-button" href="/experience/"
-            >Explore my experience <Arrow direction="right" /></a
+          <a class="pixel-button" href={pageUrl(lang, 'experience')}
+            >{t.explore} <Arrow direction="right" /></a
           >
-          <a class="text-link" href="#contact">Get in touch <Arrow /></a>
+          <a class="text-link" href="#contact">{all.common.contact} <Arrow /></a
+          >
         </div>
       </div>
       <div class="heart-display">
         <button
           class="heart-button"
           type="button"
-          aria-label="Give the heart a beat"><PixelHeart large /></button
+          aria-label={t.heartLabel}
+          data-clicked={t.heartClicked}
+          data-status={t.heartStatus}><PixelHeart large /></button
         >
         <span class="heart-shadow" aria-hidden="true"></span>
         <p class="eyebrow" data-heart-caption>
-          A LITTLE HEART.<br />A LOT OF BITS.
+          {t.heartCaption}
         </p>
         <span class="sr-only" role="status" data-heart-status></span>
       </div>
@@ -52,11 +63,11 @@ import { capabilities } from '../data/site';
   </section>
   <section class="section" aria-labelledby="capabilities-title">
     <div class="section-heading">
-      <h2 id="capabilities-title">What I can help with</h2>
+      <h2 id="capabilities-title">{t.capabilitiesTitle}</h2>
     </div>
     <div class="capabilities">
       {
-        capabilities.map((capability, index) => (
+        t.capabilities.map((capability, index) => (
           <article class="capability">
             <p class="eyebrow">0{index + 1}</p>
             <h3>{capability.name}</h3>
@@ -67,35 +78,31 @@ import { capabilities } from '../data/site';
     </div>
   </section>
   <section class="intro section" aria-labelledby="team-title">
-    <h2 id="team-title">Working with a team</h2>
+    <h2 id="team-title">{t.teamTitle}</h2>
     <p>
-      I like staying close to both the code and the people working on it. That
-      means checking in, listening when something is difficult, and working
-      through it together—whether through pair programming, a useful resource,
-      or a conversation about the next step.
+      {t.team}
     </p>
   </section>
   <section class="contact-panel" id="contact" aria-labelledby="contact-title">
     <div>
-      <h2 id="contact-title">Get in touch</h2>
+      <h2 id="contact-title">{all.common.contact}</h2>
       <p>
-        Looking for someone who can work across architecture, development, and
-        the team? Let's talk.
+        {t.contact}
       </p>
       <p class="location">
-        I'm based in Tienen, Belgium, and like working remotely.
+        {t.location}
       </p>
     </div>
-    <ContactLinks />
+    <ContactLinks lang={lang} />
   </section>
   <section class="intro section beyond-software" aria-labelledby="beyond-title">
-    <h2 id="beyond-title">Beyond software</h2>
+    <h2 id="beyond-title">{t.beyondTitle}</h2>
     <div>
       <p>
-        I also design and make things with 3D printing, from an existing model
-        or an idea that needs working out.
+        {t.beyond}
       </p>
-      <a class="text-link" href="/3d-printing/">Explore 3D printing <Arrow /></a
+      <a class="text-link" href={pageUrl(lang, '3d-printing')}
+        >{t.printingLink} <Arrow /></a
       >
     </div>
   </section>
@@ -110,7 +117,7 @@ import { capabilities } from '../data/site';
     requestAnimationFrame(() =>
       requestAnimationFrame(() => button.classList.add('beating')),
     );
-    caption.textContent = 'STILL HERE. STILL HUMAN.';
-    status.textContent = 'Heartbit has a heartbeat.';
+    caption.textContent = button.dataset.clicked || '';
+    status.textContent = button.dataset.status || '';
   });
 </script>

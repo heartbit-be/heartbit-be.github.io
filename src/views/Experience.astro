@@ -1,0 +1,92 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHeading from '../components/PageHeading.astro';
+import ContactLinks from '../components/ContactLinks.astro';
+import { translations, type Locale } from '../i18n';
+import { cvUrl } from '../data/site';
+interface Props {
+  lang: Locale;
+  automatic?: boolean;
+}
+const { lang, automatic = false } = Astro.props;
+const all = translations[lang];
+const t = all.experience;
+---
+
+<Layout
+  lang={lang}
+  page="experience"
+  automatic={automatic}
+  title={t.title}
+  description={t.metaDescription}
+>
+  <PageHeading
+    lang={lang}
+    eyebrow={t.eyebrow}
+    title={t.title}
+    description={t.description}
+  />
+  <section class="cv-panel" aria-labelledby="cv-title">
+    <div>
+      <h2 id="cv-title">{t.cvTitle}</h2>
+      <p>{t.cvDescription}</p>
+    </div>
+    <div class="actions">
+      <a class="pixel-button" href={cvUrl}>{t.viewCv}</a>
+      <a class="pixel-button" href={cvUrl} download>{t.downloadCv}</a>
+    </div>
+  </section>
+  <section class="section" aria-labelledby="experience-title">
+    <div class="section-heading">
+      <h2 id="experience-title">{t.selected}</h2>
+    </div>
+    <div class="experience-list">
+      {
+        t.entries.map((entry) => (
+          <article class="experience-entry">
+            <div>
+              <p class="eyebrow">{entry.company}</p>
+              <p class="eyebrow">{entry.dates}</p>
+            </div>
+            <div>
+              <h3>{entry.role}</h3>
+              <p>{entry.description}</p>
+              <p>{`${t.technologies}: ${entry.technologies}`}</p>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+  <section class="section" aria-labelledby="education-title">
+    <div class="section-heading">
+      <h2 id="education-title">{t.educationTitle}</h2>
+    </div>
+    <div class="experience-list">
+      {
+        t.education.map((entry) => (
+          <article class="experience-entry">
+            <p class="eyebrow">{entry.dates}</p>
+            <div>
+              <h3>{entry.degree}</h3>
+              <p>{entry.school}</p>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+  <section class="section" aria-labelledby="project-title">
+    <div class="section-heading">
+      <h2 id="project-title">{t.storyTitle}</h2>
+    </div>
+    <details class="project-story">
+      <summary>{t.storyLink}</summary>
+      <div class="prose">{t.story.map((paragraph) => <p>{paragraph}</p>)}</div>
+    </details>
+  </section>
+  <section class="contact-strip" aria-labelledby="experience-contact-title">
+    <h2 id="experience-contact-title">{t.contact}</h2>
+    <ContactLinks lang={lang} />
+  </section>
+</Layout>

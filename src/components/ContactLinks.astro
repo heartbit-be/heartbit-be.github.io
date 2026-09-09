@@ -1,12 +1,15 @@
 ---
 import { contactEmail, linkedInUrl } from '../data/site';
 import Arrow from './Arrow.astro';
+import { translations, type Locale } from '../i18n';
 
 interface Props {
+  lang: Locale;
   emailLabel?: string;
   subject?: string;
 }
-const { emailLabel = 'Email me', subject } = Astro.props;
+const { emailLabel = translations[Astro.props.lang].common.email, subject } =
+  Astro.props;
 const emailLink = `mailto:${contactEmail}${subject ? `?subject=${encodeURIComponent(subject)}` : ''}`;
 ---
 

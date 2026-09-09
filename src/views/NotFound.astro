@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHeading from '../components/PageHeading.astro';
+import Arrow from '../components/Arrow.astro';
+import { translations, pageUrl, type Locale } from '../i18n';
+interface Props {
+  lang: Locale;
+  automatic?: boolean;
+}
+const { lang, automatic = false } = Astro.props;
+const all = translations[lang];
+const t = all.notFound;
+---
+
+<Layout
+  lang={lang}
+  page="404"
+  automatic={automatic}
+  title={t.title}
+  description={t.metaDescription}
+>
+  <PageHeading
+    lang={lang}
+    eyebrow={t.eyebrow}
+    title={t.heading}
+    description={t.description}
+  />
+  <section class="content-section">
+    <a class="pixel-button" href={pageUrl(lang)}
+      >{all.common.back} <Arrow direction="right" /></a
+    >
+  </section>
+</Layout>

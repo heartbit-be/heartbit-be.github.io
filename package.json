@@ -12,7 +12,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "check": "astro check",
-    "verify": "npm run format:check && npm run check && npm run build && node scripts/verify-build.mjs",
+    "verify": "npm run format:check && node scripts/verify-language.mjs && npm run check && npm run build && node scripts/verify-build.mjs",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
   },

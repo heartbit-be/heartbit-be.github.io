@@ -23,15 +23,16 @@ npm run preview
 ## Editing
 
 - `docs/website-content-brief.md` and `docs/website-content-draft.md`: approved content direction and copy.
-- `src/data/site.ts`: capability descriptions, contact address, and the optional LinkedIn destination. Set `linkedInUrl` only after the profile URL is confirmed; links then appear in contact areas and the footer.
-- `src/pages/`: Home, Experience, 3D printing, and 404 pages. Home brings together the introduction, capabilities, team approach, and contact. Experience includes career history, education, PDF viewing/downloading, and a collapsed application-renewal story. The printing page covers custom work and the feeding-pump holder example.
+- `src/i18n/en.json` and `src/i18n/nl.json`: all English and Dutch copy, including career history, dates, capabilities, metadata, and accessibility labels. See [editing translations](docs/translations.md).
+- `src/data/site.ts`: shared contact and asset URLs, and the optional LinkedIn destination. Set `linkedInUrl` only after the profile URL is confirmed; links then appear in contact areas and the footer.
+- `src/views/`: shared Home, Experience, 3D printing, and 404 templates; `src/pages/` generates their language routes. Home brings together the introduction, capabilities, team approach, and contact. Experience includes career history, education, PDF viewing/downloading, and a collapsed application-renewal story. The printing page covers custom work and the feeding-pump holder example.
 - `src/components/ContactLinks.astro`: direct email actions and the optional LinkedIn link.
 - `src/styles/global.css`: shared Pocket palette, typography, and responsive layout.
 - `src/components/PixelHeart.astro`: pixel logo and hero mark.
 
 Fonts are bundled locally through Fontsource. No UI framework or form service is required. Contact links open the visitor's email client addressed to laurens.bolle@heartbit.be; printing enquiries include a subject. No messages or personal data are stored by the site. Navigation, email links, and the project-story disclosure work without JavaScript.
 
-The public CV is stored at `public/cv/Laurens_Bolle_CV_2026_public.pdf`. Its URL and selected career entries are maintained in `src/data/site.ts`. Project photos are optional. Add separately branded shop links to the 3D-printing page only once the shops are live; there is no public coming-soon section or blog.
+The public CV is stored at `public/cv/Laurens_Bolle_CV_2026_public.pdf`. Its URL is maintained in `src/data/site.ts`; career entries are in the translation files. Project photos are optional. Add separately branded shop links to the 3D-printing page only once the shops are live; there is no public coming-soon section or blog.
 
 ## Staging
 

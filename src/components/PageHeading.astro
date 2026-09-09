@@ -1,15 +1,18 @@
 ---
 import Arrow from './Arrow.astro';
+import { translations, pageUrl, type Locale } from '../i18n';
 interface Props {
+  lang: Locale;
   eyebrow: string;
   title: string;
   description?: string;
 }
-const { eyebrow, title, description } = Astro.props;
+const { lang, eyebrow, title, description } = Astro.props;
 ---
 
 <header class="page-heading">
-  <a class="back-link" href="/"><Arrow direction="left" /> Back to the start</a
+  <a class="back-link" href={pageUrl(lang)}
+    ><Arrow direction="left" /> {translations[lang].common.back}</a
   ><p class="eyebrow">
     {eyebrow}
   </p><h1>{title}</h1>{description && <p>{description}</p>}

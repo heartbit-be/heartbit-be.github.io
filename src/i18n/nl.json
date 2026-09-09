@@ -1,0 +1,139 @@
+{
+  "common": {
+    "home": "Home",
+    "experience": "Ervaring",
+    "printing": "3D-printen",
+    "email": "Mail me",
+    "contact": "Neem contact op",
+    "back": "Terug naar het begin",
+    "skip": "Ga naar de inhoud",
+    "navigation": "Hoofdnavigatie",
+    "language": "Taal",
+    "brandHome": "Heartbit-homepagina",
+    "footer": "HART + BIT = HEARTBIT"
+  },
+  "home": {
+    "title": "Laurens · Software-engineer & technisch lead",
+    "description": "Ik ben Laurens, software-engineer en technisch lead. Full-stack development, cloudarchitectuur en AI-engineering. Vanuit Tienen, België; graag op afstand.",
+    "screen": "HEARTBIT / SOFTWARE & MAKEN",
+    "greeting": "Ik ben Laurens,",
+    "role": "software-engineer en technisch lead.",
+    "intro": "Ik zoek graag uit hoe een systeem in elkaar moet zitten, bouw het mee en help het team onderweg. Mijn werk gaat van full-stack development tot cloudarchitectuur en AI-engineering.",
+    "explore": "Bekijk mijn ervaring",
+    "heartLabel": "Laat het hart kloppen",
+    "heartCaption": "EEN BEETJE HART.\nEEN HELEBOEL BITS.",
+    "heartClicked": "NOG STEEDS HIER. NOG STEEDS MENS.",
+    "heartStatus": "Heartbit heeft een hartslag.",
+    "capabilitiesTitle": "Waar ik bij kan helpen",
+    "capabilities": [
+      {
+        "name": "Softwareontwikkeling",
+        "description": "Van begrijpen wat mensen nodig hebben tot de applicatie bouwen en opleveren: ik neem graag verantwoordelijkheid voor het geheel. Ik heb ervaring met onder meer .NET, Angular, PostgreSQL, Azure en Azure DevOps."
+      },
+      {
+        "name": "Cloudarchitectuur",
+        "description": "Ik vertaal behoeften naar een ontwerp waarop het team kan voortbouwen: hoe de applicatie is opgebouwd, hoe de onderdelen communiceren en hoe ze in de cloud draait. Ik blijf ook betrokken bij de implementatie."
+      },
+      {
+        "name": "AI-engineering",
+        "description": "Ik help teams AI in te zetten: van coding agents in hun ontwikkelproces tot het ontwerpen en bouwen van applicaties en functies met AI. Bij Waterleau coach en begeleid ik het team ook in het doeltreffend gebruiken van AI bij softwareontwikkeling, vanuit mijn eigen ervaring met coding agents en agentische workflows."
+      }
+    ],
+    "teamTitle": "Samenwerken met een team",
+    "team": "Ik blijf graag dicht bij de code én bij de mensen die eraan werken. Dat betekent regelmatig bijpraten, luisteren wanneer iets moeilijk loopt en samen een oplossing zoeken. Soms door samen te programmeren, soms met een nuttige bron of een gesprek over de volgende stap.",
+    "contact": "Zoek je iemand die architectuur, ontwikkeling en het team met elkaar verbindt? Laten we kennismaken.",
+    "location": "Ik woon in Tienen, België, en werk graag op afstand.",
+    "beyondTitle": "Meer dan software",
+    "beyond": "Ik ontwerp en maak ook dingen met een 3D-printer, vanuit een bestaand model of een idee dat nog vorm moet krijgen.",
+    "printingLink": "Ontdek 3D-printen"
+  },
+  "experience": {
+    "title": "Ervaring",
+    "description": "Een kijkje in mijn werk rond softwareontwikkeling, technisch leiderschap en architectuur.",
+    "metaDescription": "Mijn ervaring in softwareontwikkeling, technisch leiderschap en architectuur, met onder meer de vernieuwing van een productieapplicatie.",
+    "eyebrow": "01 / SOFTWARE & TEAMS",
+    "cvTitle": "Mijn cv",
+    "cvDescription": "Mijn achtergrond, ervaring en opleiding in één pdf (in het Engels).",
+    "viewCv": "Bekijk cv (pdf, Engels)",
+    "downloadCv": "Download cv (pdf, Engels)",
+    "selected": "Een selectie uit mijn ervaring",
+    "entries": [
+      {
+        "company": "Waterleau",
+        "role": "Development lead, architect & AI-evangelist",
+        "dates": "Mei 2022–heden",
+        "description": "Ik ontwerp en bouw cloud-first applicaties voor water- en afvalwaterzuivering, waaronder de vernieuwing van het Smartlab-platform. Daarbij verbind ik data uit bestaande installaties met een nieuwe cloudarchitectuur, terwijl de installaties blijven draaien. Samen met collega’s uit de operationele technologie werk ik aan herbruikbare datastructuren en dashboards. Ik coach het ontwikkelteam ook in het doeltreffend gebruiken van AI.",
+        "technologies": ".NET, Angular, PostgreSQL, Azure, Terraform, Docker, Azure DevOps."
+      },
+      {
+        "company": "Farmad",
+        "role": "Full-stack developer & Scrum master",
+        "dates": "Augustus 2021–april 2022",
+        "description": "Ik hielp bij het ontwerpen en bouwen van een cloud-first vervanger voor apotheeksoftware. Naast de ontwikkeling werkte ik aan de migratie van bestaande data, het afbakenen van een gerichte eerste release en het introduceren van domain-driven design bij ontwikkelaars die er nog niet mee vertrouwd waren.",
+        "technologies": ".NET, Angular, PostgreSQL, AWS, Terraform, Docker."
+      },
+      {
+        "company": "Atrias",
+        "role": "Lead developer",
+        "dates": "November 2020–juli 2021",
+        "description": "Ik leidde het ontwerp en de oplevering van een cloudgebaseerde testtool voor de Belgische energiemarkt, voor functionele acceptatietests en belastingtests van het Central Market System. Mijn rol omvatte applicatie- en cloudarchitectuur, implementatie, ondersteuning bij deployment en cloudbeveiliging, en coaching van junior ontwikkelaars.",
+        "technologies": ".NET, React, PostgreSQL, Azure, Terraform, Docker, Azure DevOps."
+      },
+      {
+        "company": "SESVanderHave",
+        "role": "Full-stack developer & Scrum master",
+        "dates": "Juli 2018–oktober 2020",
+        "description": "Ik ontwikkelde functies voor een R&D-platform voor suikerbietenveredeling, genetica, zaadbeheer en geautomatiseerd zaaien. Daarnaast coachte ik collega-ontwikkelaars en hielp ik het team via Scrum zijn manier van werken te verbeteren.",
+        "technologies": ".NET Core, Angular, Oracle."
+      }
+    ],
+    "technologies": "Technologieën",
+    "educationTitle": "Opleiding",
+    "education": [
+      {
+        "dates": "September 2013–januari 2016",
+        "degree": "Master in de ingenieurswetenschappen: computerwetenschappen",
+        "school": "KU Leuven"
+      },
+      {
+        "dates": "September 2010–juli 2013",
+        "degree": "Bachelor in de informatica",
+        "school": "Universiteit Hasselt"
+      }
+    ],
+    "storyTitle": "Een applicatie vernieuwen",
+    "storyLink": "Lees het projectverhaal",
+    "story": [
+      "Een applicatie die als proof of concept begon, was in productie genomen. Naarmate het gebruik toenam, ondervonden gebruikers problemen en stonden de oorspronkelijke technische keuzes gewenste functies in de weg.",
+      "Ik verzamelde gebruikersproblemen en featureverzoeken, werkte de functionele en technische analyse uit en ontwierp de cloudarchitectuur, het domeinmodel en de API’s. Ik overtuigde de leiding van de noodzaak tot vernieuwing en bouwde en leverde de vervangende applicatie vervolgens zelf op.",
+      "De nieuwe applicatie verbeterde de beveiliging en de gebruikerservaring, maakte eerder geblokkeerde functies mogelijk en stelde de toepassing open voor externe klanten. Ze werd ontworpen om verder uit te breiden en op te schalen."
+    ],
+    "contact": "Laten we het over je team hebben."
+  },
+  "printing": {
+    "title": "3D-printen",
+    "metaDescription": "3D-printwerk op maat met Laurens bij Heartbit: bestaande modellen printen, ontwerpen vanuit een idee, prototypes en vervangonderdelen.",
+    "eyebrow": "02 / 3D-PRINTEN",
+    "heading": "Van een idee naar iets tastbaars",
+    "intro": "Heb je een model dat klaar is om te printen, of een idee dat nog een ontwerp nodig heeft? Ik help met ontwerpen op maat, prototypes, vervangonderdelen en het printen van bestaande modellen.",
+    "action": "Bespreek een idee",
+    "subject": "Heartbit: een idee voor een 3D-print",
+    "exampleEyebrow": "EEN ONTWERP OP MAAT",
+    "exampleTitle": "Een houder voor dagelijks gebruik",
+    "example": [
+      "De ouders van een peuter die een voedingspomp gebruikt, zochten een houder voor zowel de pomp als het voedingsreservoir. Die moest in een kleine rugzak passen voor onderweg en makkelijk aan een wieg of bed bevestigd kunnen worden voor nachtelijke voedingen.",
+      "Ik ontwierp, prototypeerde en leverde een meerdelige 3D-geprinte constructie op die op die behoeften was afgestemd.",
+      "We besloten het model ook open-source te maken en gratis beschikbaar te stellen aan andere ouders in een vergelijkbare situatie."
+    ],
+    "model": "Bekijk het model op MakerWorld",
+    "contactTitle": "Vertel me wat je in gedachten hebt.",
+    "contact": "Heb je al een model, schets of foto? Stuur die gerust mee in je mail."
+  },
+  "notFound": {
+    "title": "Pagina niet gevonden",
+    "metaDescription": "Dit pad loopt dood. Ga terug naar Heartbit en kies een andere route.",
+    "eyebrow": "404 / BUITEN DE KAART",
+    "heading": "Even van het pad af.",
+    "description": "Hier is geen pagina. Laten we je terugbrengen naar vertrouwd terrein."
+  }
+}

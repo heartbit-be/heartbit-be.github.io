@@ -7,44 +7,100 @@ import '../styles/global.css';
 import PixelHeart from '../components/PixelHeart.astro';
 import Arrow from '../components/Arrow.astro';
 import { contactEmail, linkedInUrl } from '../data/site';
+import {
+  translations,
+  locales,
+  pageUrl,
+  type Locale,
+  type Page,
+} from '../i18n';
+import languageScript from '../i18n/browser.js?raw';
 interface Props {
+  lang: Locale;
+  page: Page;
+  automatic?: boolean;
   title: string;
   description: string;
 }
-const { title, description } = Astro.props;
-const path = Astro.url.pathname;
+const { title, description, lang, page, automatic = false } = Astro.props;
+const t = translations[lang].common;
 const links = [
-  ['/', 'Home'],
-  ['/experience/', 'Experience'],
-  ['/3d-printing/', '3D printing'],
-];
+  ['', t.home],
+  ['experience', t.experience],
+  ['3d-printing', t.printing],
+] as const;
 const staging = import.meta.env.PUBLIC_SITE_ENV === 'staging';
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={lang}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
     <meta name="theme-color" content="#d6dea9" />
-    {staging && <meta name="robots" content="noindex, nofollow" />}
-    <link rel="canonical" href={new URL(path, Astro.site)} />
+    {
+      (staging || page === '404') && (
+        <meta name="robots" content="noindex, nofollow" />
+      )
+    }
+    <link rel="canonical" href={new URL(pageUrl(lang, page), Astro.site)} />
+    {
+      locales.map((locale) => (
+        <link
+          rel="alternate"
+          hreflang={locale}
+          href={new URL(pageUrl(locale, page), Astro.site)}
+        />
+      ))
+    }
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href={new URL(
+        page === '404' ? '/404.html' : `/${page ? `${page}/` : ''}`,
+        Astro.site,
+      )}
+    />
+    <script
+      is:inline
+      data-page={page}
+      data-automatic={String(automatic)}
+      set:html={languageScript}
+    />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title} | Heartbit</title>
   </head>
   <body>
-    <a class="skip-link" href="#main">Skip to content</a>
+    <a class="skip-link" href="#main">{t.skip}</a>
     <div class="site-shell">
       <header class="site-header">
-        <a class="brand" href="/" aria-label="Heartbit home"
+        <a class="brand" href={pageUrl(lang)} aria-label={t.brandHome}
           ><PixelHeart /><span>heartbit</span></a
         >
-        <nav aria-label="Main navigation">
+        <nav aria-label={t.navigation} data-main-navigation>
           {
-            links.map(([href, label]) => (
-              <a href={href} aria-current={path === href ? 'page' : undefined}>
+            links.map(([target, label]) => (
+              <a
+                href={pageUrl(lang, target)}
+                aria-current={page === target ? 'page' : undefined}
+              >
                 {label}
+              </a>
+            ))
+          }
+        </nav>
+        <nav class="language-picker" aria-label={t.language}>
+          {
+            locales.map((locale) => (
+              <a
+                href={pageUrl(locale, page)}
+                lang={locale}
+                hreflang={locale}
+                data-language={locale}
+                aria-current={lang === locale ? 'true' : undefined}
+              >
+                {locale === 'en' ? 'English' : 'Nederlands'}
               </a>
             ))
           }
@@ -52,7 +108,7 @@ const staging = import.meta.env.PUBLIC_SITE_ENV === 'staging';
       </header>
       <main id="main"><slot /></main>
       <footer class="site-footer">
-        <a class="footer-mark" href="/"><PixelHeart /> HEART + BIT = HEARTBIT</a
+        <a class="footer-mark" href={pageUrl(lang)}><PixelHeart /> {t.footer}</a
         >
         <div class="footer-contact">
           <a href={`mailto:${contactEmail}`}>{contactEmail}</a>

@@ -444,6 +444,7 @@ h3 {
 }
 .experience-entry h3 {
   margin-bottom: 10px;
+  overflow-wrap: anywhere;
 }
 .experience-entry p:not(.eyebrow) {
   max-width: 620px;
@@ -655,4 +656,21 @@ h3 {
   .heart-button:hover {
     transform: none;
   }
+}
+
+.site-header {
+  flex-wrap: wrap;
+  padding-block: 20px;
+}
+.site-header .language-picker {
+  gap: 12px;
+  width: auto;
+  font-family: var(--mono);
+}
+.language-picker a[aria-current] {
+  font-weight: 500;
+  text-decoration-thickness: 2px;
+}
+[data-heart-caption] {
+  white-space: pre-line;
 }

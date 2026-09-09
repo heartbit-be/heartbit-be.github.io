@@ -1,0 +1,39 @@
+---
+import Home from '../views/Home.astro';
+import Experience from '../views/Experience.astro';
+import Printing from '../views/Printing.astro';
+import NotFound from '../views/NotFound.astro';
+import { locales, type Locale, type Page } from '../i18n';
+
+export function getStaticPaths() {
+  const pages = ['', 'experience', '3d-printing', '404'] as const;
+  return [
+    ...locales.flatMap((lang) =>
+      pages.map((page) => ({
+        params: { path: `${lang}${page ? `/${page}` : ''}` },
+        props: { lang, page, automatic: false },
+      })),
+    ),
+    ...pages
+      .filter((page) => page !== '404')
+      .map((page) => ({
+        params: { path: page || undefined },
+        props: { lang: 'en', page, automatic: true },
+      })),
+  ];
+}
+interface Props {
+  lang: Locale;
+  page: Page;
+  automatic: boolean;
+}
+const { lang, page, automatic } = Astro.props;
+const View = {
+  '': Home,
+  experience: Experience,
+  '3d-printing': Printing,
+  '404': NotFound,
+}[page];
+---
+
+<View lang={lang} automatic={automatic} />

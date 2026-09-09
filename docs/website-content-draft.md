@@ -24,7 +24,9 @@ I turn requirements into a design the team can build on: how the application is 
 
 I help teams put AI to work: adopting coding agents in their development workflow, and designing and building AI-powered features and applications.
 
-Editorial note: the AI paragraph describes the offer. Current professional experience is strongest in coding-agent use; do not add claims of delivered AI applications without further evidence.
+At Waterleau, I also coach and mentor the team on using AI effectively in development, drawing on coding agents and agentic workflows in my own work.
+
+Editorial note: professional AI coaching is supported by the supplied CV. Do not infer personal delivery of AI-powered features from the CV's broader description of the Smartlab platform.
 
 ### Working with a team
 
@@ -50,21 +52,50 @@ Action: Explore 3D printing
 
 A closer look at my work in software engineering, technical leadership, and architecture.
 
-CV area: [View CV] · [Download CV] — placeholders until the real CV is supplied; no fabricated download or broken destination.
+CV actions: [View CV (PDF)](/cv/Laurens_Bolle_CV_2026_public.pdf) · [Download CV (PDF)](/cv/Laurens_Bolle_CV_2026_public.pdf).
+
+Editorial note: both actions use the supplied public PDF. When implementing the site, use a normal link for viewing and the HTML `download` attribute for downloading.
 
 ### Selected experience
 
-**[Placeholder — recent engagement]**
+**Waterleau — Development lead, architect & AI evangelist**
 
-[Role · organisation or anonymous client description · dates]
+May 2022–present
 
-[Brief description of the situation, Laurens's responsibilities, and a concrete contribution. Replace with CV-backed content.]
+I design and build cloud-first applications for water and wastewater treatment, including the renewal of the Smartlab platform. The work connects data from existing plants with a new cloud architecture while keeping operations running. I work with operational technology colleagues on reusable data structures and dashboards, and coach the development team on using AI effectively.
 
-**[Placeholder — earlier engagement]**
+Technologies: .NET, Angular, PostgreSQL, Azure, Terraform, Docker, Azure DevOps.
 
-[Role · organisation or anonymous client description · dates]
+**Farmad — Full-stack developer & Scrum master**
 
-[Brief summary of relevant work. Replace with CV-backed content.]
+August 2021–April 2022
+
+I helped design and build a cloud-first replacement for software used in pharmacies. Alongside development, I worked on legacy data migration, keeping the initial release focused, and introducing domain-driven design to developers unfamiliar with it.
+
+Technologies: .NET, Angular, PostgreSQL, AWS, Terraform, Docker.
+
+**Atrias — Lead developer**
+
+November 2020–July 2021
+
+I led the design and delivery of a cloud-based test tool for the Belgian energy market, covering functional acceptance and high-load testing of the Central Market System. My responsibilities spanned application and cloud architecture, implementation, deployment and cloud security support, and coaching junior developers.
+
+Technologies: .NET, React, PostgreSQL, Azure, Terraform, Docker, Azure DevOps.
+
+**SESVanderHave — Full-stack developer & Scrum master**
+
+July 2018–October 2020
+
+I developed features for an R&D platform supporting sugar beet breeding, genetics, seed management, and automated sowing. I also coached fellow developers and helped the team improve its way of working through Scrum.
+
+Technologies: .NET Core, Angular, Oracle.
+
+### Education
+
+- Master of Engineering: Computer Science — University of Leuven, September 2013–January 2016.
+- Bachelor of Informatics — Universiteit Hasselt, September 2010–July 2013.
+
+Editorial note: role titles, dates, and education come from the supplied 2026 CV. These are selected engagements, not a claim to a complete career timeline. The anonymous story below remains separate from the named entries as agreed.
 
 ### Optional detail: renewing an application
 
@@ -106,4 +137,4 @@ Action: Email me
 
 - Add links to the separately branded product shops on the 3D-printing page once they are live. Do not show a public coming-soon section.
 - No blog in the first version.
-- CV, career details, LinkedIn URL, and optional photos will be supplied later.
+- The public PDF CV and selected career details are supplied. The LinkedIn URL and optional photos remain pending.

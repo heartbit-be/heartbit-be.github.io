@@ -14,7 +14,7 @@ Experience includes Azure, .NET, Angular, Azure DevOps, and PostgreSQL. Desired 
 
 The simpler, first-person introduction is preferred, with “freelance” and location removed from the introduction. This is a copy preference, not a change to employment status or the previously supplied location. Working draft: “I'm Laurens, a software engineer and technical lead. I like figuring out how a system should fit together, building it, and helping the team along the way. My work spans full-stack development, cloud architecture, and putting AI to use in software delivery.”
 
-Current professional AI experience is using coding agents to deliver software. Building AI-powered applications is planned, not established experience. Laurens wants enquiries both for helping developers adopt coding agents and for designing and delivering AI-powered applications, with more real-world experience in the former. Laurens has also helped friends and family use AI and follows its possibilities in broader business contexts. Final public wording remains open.
+Current professional AI experience includes using coding agents and agentic workflows to deliver software, and coaching and mentoring the Waterleau team on using AI effectively, as confirmed by the supplied CV. Building AI-powered applications is planned, not established personal delivery experience. Laurens wants enquiries both for helping developers adopt coding agents and for designing and delivering AI-powered applications, with more real-world experience in the former. Laurens has also helped friends and family use AI and follows its possibilities in broader business contexts. Direct public AI service wording was accepted in the final interview review.
 
 Developer coaching is part of how Laurens works in a team. He follows up with developers, listens to problems, and helps resolve them through pair programming, useful information, and guidance. Do not present this as a separate coaching package without a new decision.
 
@@ -36,9 +36,19 @@ Three main pages are agreed:
 
 Email and LinkedIn should be easy to find throughout. Do not stretch the content across separate About, Services, Work, Shops, and Contact pages.
 
-Laurens answered yes to email as the main contact action with LinkedIn as a secondary route, and explicitly wants CV viewing/downloading. Confirm actual CV content and the LinkedIn destination before using them.
+Laurens answered yes to email as the main contact action with LinkedIn as a secondary route, and explicitly wants CV viewing/downloading. The supplied CV is available for download; the LinkedIn destination remains pending.
 
-Laurens will supply his CV later and has authorised dummy content for now. Use clearly marked illustrative entries and CV placeholders, not invented employers, dates, or qualifications presented as real history. The repository currently contains neither a CV nor a LinkedIn destination.
+On 9 September 2026, Laurens supplied his CV and requested that the content be updated from it. The selected experience placeholders are now replaced with CV-backed summaries. He subsequently replaced the Word source with the public PDF at `public/cv/Laurens_Bolle_CV_2026_public.pdf`. Both viewing and downloading should use `/cv/Laurens_Bolle_CV_2026_public.pdf`. No LinkedIn URL was found in the original CV.
+
+## CV-backed experience
+
+- Waterleau: Development lead, architect & AI evangelist, May 2022–present. Cloud-first application work, Smartlab renewal, legacy plant data integration, collaboration with operational technology, and team AI coaching.
+- Farmad: Full-stack developer & Scrum master, August 2021–April 2022. Cloud-first pharmacy software replacement, legacy data migration, MVP scope, and domain-driven design coaching.
+- Atrias: Lead developer, November 2020–July 2021. Application and cloud architecture through delivery of an acceptance/load-testing tool for the Belgian energy market, deployment/security support, and junior developer coaching.
+- SESVanderHave: Full-stack developer & Scrum master, July 2018–October 2020. R&D platform development, developer coaching, and continuous improvement through Scrum.
+- Education: Bachelor of Informatics at Universiteit Hasselt, September 2010–July 2013; Master of Engineering: Computer Science at University of Leuven, September 2013–January 2016.
+
+Use these as selected engagements; do not invent earlier roles to complete the timeline. Keep the separately agreed renewal case study anonymous. The CV describes AI-driven capabilities in Smartlab, but does not establish which AI features Laurens personally built; retain the distinction between platform capabilities and personal delivery evidence.
 
 ## Experience example: application renewal
 
@@ -66,7 +76,7 @@ Laurens rejected “I'm also interested in projects that bring AI into applicati
 
 - Laurens approved the direct AI engineering offer: helping teams adopt coding agents and designing and building AI-powered features and applications.
 - Laurens reviewed the complete draft and confirmed it looks good. The three-page structure, tone, and content direction are agreed.
-- CV, actual career entries, LinkedIn destination, and any project photos are deferred assets, not blockers for the content draft.
+- Public PDF CV and actual career entries are now supplied and incorporated. The LinkedIn destination and any project photos remain deferred assets.
 
 ## Interview design tree
 
@@ -80,7 +90,7 @@ Laurens rejected “I'm also interested in projects that bring AI into applicati
   - Architecture and delivery evidence: example, sole delivery, and qualitative outcomes captured; case study acceptable away from homepage spotlight.
   - Coaching: everyday team practice established, including pair programming and guidance.
 - Blog: omitted from first version.
-- Page structure: Home, Experience, and 3D printing agreed; CV/history placeholders authorised.
+- Page structure: Home, Experience, and 3D printing agreed; CV/history placeholders replaced from the supplied CV. Public PDF available for viewing and downloading.
 - Custom-design evidence: feeding-pump holder example captured.
 - Final AI wording and shared-understanding review: complete; content direction accepted.
 

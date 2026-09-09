@@ -1,6 +1,6 @@
 # Heartbit
 
-Pocket, the next Heartbit website. Astro generates static HTML for GitHub Pages and Coolify. The existing production website remains on `main` while this branch is developed.
+Pocket, the Heartbit website. Astro generates static HTML for GitHub Pages and Coolify. Commits to `main` are verified, built, and deployed to GitHub Pages.
 
 ## Local development
 
@@ -24,14 +24,14 @@ npm run preview
 
 - `docs/website-content-brief.md` and `docs/website-content-draft.md`: approved content direction and copy.
 - `src/data/site.ts`: capability descriptions, contact address, and the optional LinkedIn destination. Set `linkedInUrl` only after the profile URL is confirmed; links then appear in contact areas and the footer.
-- `src/pages/`: Home, Experience, 3D printing, and 404 pages. Home brings together the introduction, capabilities, team approach, and contact. Experience includes CV/history placeholders and a collapsed application-renewal story. The printing page covers custom work and the feeding-pump holder example.
+- `src/pages/`: Home, Experience, 3D printing, and 404 pages. Home brings together the introduction, capabilities, team approach, and contact. Experience includes career history, education, PDF viewing/downloading, and a collapsed application-renewal story. The printing page covers custom work and the feeding-pump holder example.
 - `src/components/ContactLinks.astro`: direct email actions and the optional LinkedIn link.
 - `src/styles/global.css`: shared Pocket palette, typography, and responsive layout.
 - `src/components/PixelHeart.astro`: pixel logo and hero mark.
 
 Fonts are bundled locally through Fontsource. No UI framework or form service is required. Contact links open the visitor's email client addressed to laurens.bolle@heartbit.be; printing enquiries include a subject. No messages or personal data are stored by the site. Navigation, email links, and the project-story disclosure work without JavaScript.
 
-The CV controls are disabled placeholders until a real CV is supplied. Add the approved file under `public/`, replace the controls in `src/pages/experience.astro` with view/download links, and replace the clearly marked career placeholders with CV-backed entries. Project photos are optional. Add separately branded shop links to the 3D-printing page only once the shops are live; there is no public coming-soon section or blog.
+The public CV is stored at `public/cv/Laurens_Bolle_CV_2026_public.pdf`. Its URL and selected career entries are maintained in `src/data/site.ts`. Project photos are optional. Add separately branded shop links to the 3D-printing page only once the shops are live; there is no public coming-soon section or blog.
 
 ## Staging
 
@@ -45,14 +45,13 @@ SITE_URL=https://heartbit-staging.46.225.75.37.sslip.io PUBLIC_SITE_ENV=staging 
 
 ## Production
 
-The default site origin is `https://heartbit.be`, with root-relative paths and trailing slashes. `public/CNAME` and `public/.nojekyll` are copied into the output for Pages compatibility. The existing root `index.html` is retained as the old production source during this initial implementation; Astro builds only `src/pages/`.
+The default site origin is `https://heartbit.be`, with root-relative paths and trailing slashes. `public/CNAME` and `public/.nojekyll` are copied into the output for Pages compatibility. The root `index.html` is retained as the old production source; Astro builds only `src/pages/`, and only `dist/` is deployed.
 
-The check workflow only validates code. It cannot deploy to GitHub Pages. At launch, configure GitHub Pages to use a build-and-deploy Actions workflow restricted to `main`, and publish the generated `dist/` artifact. Do not switch the live publishing source to this feature branch.
+GitHub Pages uses GitHub Actions as its publishing source. `.github/workflows/deploy.yml` runs only on `main`, verifies the production build, uploads `dist/`, and deploys through the `github-pages` environment. The custom domain remains `heartbit.be`. The separate check workflow validates changes on feature branches and pull requests, including staging output.
 
-## Before launch
+## Remaining content
 
-- Supply the real CV, career entries, and confirmed LinkedIn destination when available.
+- Supply the confirmed LinkedIn destination when available.
 - Add approved project images if available.
 - Review Pocket in desktop/mobile browsers and with keyboard navigation.
 - Recheck staging HTTPS, static routing, and noindex headers after deployment changes.
-- Set up the production deployment workflow when the redesign is approved.

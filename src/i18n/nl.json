@@ -5,85 +5,85 @@
     "printing": "3D-printen",
     "email": "Mail me",
     "contact": "Neem contact op",
-    "back": "Terug naar het begin",
+    "back": "Naar de homepagina",
     "skip": "Ga naar de inhoud",
     "navigation": "Hoofdnavigatie",
     "language": "Taal",
-    "brandHome": "Heartbit-homepagina",
-    "footer": "HART + BIT = HEARTBIT"
+    "brandHome": "Naar de homepagina van Heartbit",
+    "footer": "HEART + BIT = HEARTBIT"
   },
   "home": {
-    "title": "Laurens · Software-engineer & technisch lead",
-    "description": "Ik ben Laurens, software-engineer en technisch lead. Full-stack development, cloudarchitectuur en AI-engineering. Vanuit Tienen, België; graag op afstand.",
-    "screen": "HEARTBIT / SOFTWARE & MAKEN",
+    "title": "Laurens · Software engineer & tech lead",
+    "description": "Ik ben Laurens, software engineer en tech lead. Ik werk aan software, cloudarchitectuur en AI, en help teams vooruit. Ik woon in Tienen en werk graag remote.",
+    "screen": "HEARTBIT / SOFTWARE & 3D-PRINTEN",
     "greeting": "Ik ben Laurens,",
-    "role": "software-engineer en technisch lead.",
-    "intro": "Ik zoek graag uit hoe een systeem in elkaar moet zitten, bouw het mee en help het team onderweg. Mijn werk gaat van full-stack development tot cloudarchitectuur en AI-engineering.",
+    "role": "software engineer en tech lead.",
+    "intro": "Ik denk graag mee over hoe we software het best opbouwen, werk zelf mee aan de code en help collega’s wanneer ze vastlopen. Dat doe ik met een brede blik: van full-stack development tot cloudarchitectuur en AI.",
     "explore": "Bekijk mijn ervaring",
     "heartLabel": "Laat het hart kloppen",
-    "heartCaption": "EEN BEETJE HART.\nEEN HELEBOEL BITS.",
-    "heartClicked": "NOG STEEDS HIER. NOG STEEDS MENS.",
+    "heartCaption": "MET EEN HART\nVOOR TECHNIEK.",
+    "heartClicked": "JA HOOR, HET KLOPT NOG.",
     "heartStatus": "Heartbit heeft een hartslag.",
     "capabilitiesTitle": "Waar ik bij kan helpen",
     "capabilities": [
       {
         "name": "Softwareontwikkeling",
-        "description": "Van begrijpen wat mensen nodig hebben tot de applicatie bouwen en opleveren: ik neem graag verantwoordelijkheid voor het geheel. Ik heb ervaring met onder meer .NET, Angular, PostgreSQL, Azure en Azure DevOps."
+        "description": "Ik zoek uit wat gebruikers nodig hebben en werk mee van het eerste idee tot de oplevering. Daarbij neem ik graag verantwoordelijkheid voor het geheel. Ik werk onder meer met .NET, Angular, PostgreSQL, Azure en Azure DevOps."
       },
       {
         "name": "Cloudarchitectuur",
-        "description": "Ik vertaal behoeften naar een ontwerp waarop het team kan voortbouwen: hoe de applicatie is opgebouwd, hoe de onderdelen communiceren en hoe ze in de cloud draait. Ik blijf ook betrokken bij de implementatie."
+        "description": "Ik denk mee over de opbouw van een applicatie: welke onderdelen we nodig hebben, hoe die samenwerken en hoe we alles in de cloud laten draaien. Ik werk het ontwerp uit en bouw zelf mee aan de oplossing."
       },
       {
         "name": "AI-engineering",
-        "description": "Ik help teams AI in te zetten: van coding agents in hun ontwikkelproces tot het ontwerpen en bouwen van applicaties en functies met AI. Bij Waterleau coach en begeleid ik het team ook in het doeltreffend gebruiken van AI bij softwareontwikkeling, vanuit mijn eigen ervaring met coding agents en agentische workflows."
+        "description": "Ik help teams aan de slag met AI: coding agents gebruiken tijdens het ontwikkelen, maar ook toepassingen en functies met AI ontwerpen en bouwen. Bij Waterleau begeleid ik collega’s bij het gebruik van AI in hun dagelijkse werk. Zelf werk ik volop met coding agents en laat ik ze ook zelfstandig ontwikkeltaken uitvoeren."
       }
     ],
-    "teamTitle": "Samenwerken met een team",
-    "team": "Ik blijf graag dicht bij de code én bij de mensen die eraan werken. Dat betekent regelmatig bijpraten, luisteren wanneer iets moeilijk loopt en samen een oplossing zoeken. Soms door samen te programmeren, soms met een nuttige bron of een gesprek over de volgende stap.",
-    "contact": "Zoek je iemand die architectuur, ontwikkeling en het team met elkaar verbindt? Laten we kennismaken.",
-    "location": "Ik woon in Tienen, België, en werk graag op afstand.",
+    "teamTitle": "Zo werk ik samen",
+    "team": "Ik werk graag mee aan de code en maak tijd voor de mensen in het team. Even horen hoe het gaat, luisteren naar wat moeilijk loopt en samen een oplossing zoeken. Dat kan een sessie pair programming zijn, een handige tip of gewoon even samen nadenken.",
+    "contact": "Zoek je iemand die meedenkt over de architectuur, mee ontwikkelt en je team vooruithelpt? Laat gerust iets weten.",
+    "location": "Ik woon in Tienen en werk graag remote.",
     "beyondTitle": "Meer dan software",
-    "beyond": "Ik ontwerp en maak ook dingen met een 3D-printer, vanuit een bestaand model of een idee dat nog vorm moet krijgen.",
-    "printingLink": "Ontdek 3D-printen"
+    "beyond": "Naast software maak ik ook graag dingen met mijn 3D-printer. Soms vertrek ik van een bestaand model, soms werk ik een idee helemaal uit.",
+    "printingLink": "Bekijk wat ik maak"
   },
   "experience": {
     "title": "Ervaring",
-    "description": "Een kijkje in mijn werk rond softwareontwikkeling, technisch leiderschap en architectuur.",
-    "metaDescription": "Mijn ervaring in softwareontwikkeling, technisch leiderschap en architectuur, met onder meer de vernieuwing van een productieapplicatie.",
+    "description": "Een overzicht van de projecten waaraan ik gewerkt heb en de rollen die ik opnam.",
+    "metaDescription": "Mijn ervaring als software engineer, lead developer en architect: projecten bij Waterleau, Farmad, Atrias en SESVanderHave.",
     "eyebrow": "01 / SOFTWARE & TEAMS",
     "cvTitle": "Mijn cv",
-    "cvDescription": "Mijn achtergrond, ervaring en opleiding in één pdf (in het Engels).",
+    "cvDescription": "Meer over mijn ervaring en opleiding vind je in mijn cv. Het is beschikbaar als Engelstalige pdf.",
     "viewCv": "Bekijk cv (pdf, Engels)",
     "downloadCv": "Download cv (pdf, Engels)",
-    "selected": "Een selectie uit mijn ervaring",
+    "selected": "Een greep uit mijn werk",
     "entries": [
       {
         "company": "Waterleau",
         "role": "Development lead, architect & AI-evangelist",
         "dates": "Mei 2022–heden",
-        "description": "Ik ontwerp en bouw cloud-first applicaties voor water- en afvalwaterzuivering, waaronder de vernieuwing van het Smartlab-platform. Daarbij verbind ik data uit bestaande installaties met een nieuwe cloudarchitectuur, terwijl de installaties blijven draaien. Samen met collega’s uit de operationele technologie werk ik aan herbruikbare datastructuren en dashboards. Ik coach het ontwikkelteam ook in het doeltreffend gebruiken van AI.",
+        "description": "Bij Waterleau ontwerp en bouw ik applicaties in de cloud voor water- en afvalwaterzuivering. Zo werk ik aan de vernieuwing van het Smartlab-platform. Ik zorg dat data uit bestaande installaties in de nieuwe omgeving terechtkomen, terwijl die installaties gewoon blijven draaien. Met de OT-collega’s maak ik afspraken over datastructuren, zodat we dashboards makkelijker kunnen hergebruiken. Daarnaast help ik het ontwikkelteam om AI goed in te zetten.",
         "technologies": ".NET, Angular, PostgreSQL, Azure, Terraform, Docker, Azure DevOps."
       },
       {
         "company": "Farmad",
         "role": "Full-stack developer & Scrum master",
         "dates": "Augustus 2021–april 2022",
-        "description": "Ik hielp bij het ontwerpen en bouwen van een cloud-first vervanger voor apotheeksoftware. Naast de ontwikkeling werkte ik aan de migratie van bestaande data, het afbakenen van een gerichte eerste release en het introduceren van domain-driven design bij ontwikkelaars die er nog niet mee vertrouwd waren.",
+        "description": "Bij Farmad werkte ik mee aan een nieuwe versie van hun apotheeksoftware, gebouwd voor de cloud. Ik hielp bestaande gegevens overzetten en bewaakte mee wat er echt nodig was voor de eerste versie. Ook maakte ik collega’s wegwijs in domain-driven design.",
         "technologies": ".NET, Angular, PostgreSQL, AWS, Terraform, Docker."
       },
       {
         "company": "Atrias",
         "role": "Lead developer",
         "dates": "November 2020–juli 2021",
-        "description": "Ik leidde het ontwerp en de oplevering van een cloudgebaseerde testtool voor de Belgische energiemarkt, voor functionele acceptatietests en belastingtests van het Central Market System. Mijn rol omvatte applicatie- en cloudarchitectuur, implementatie, ondersteuning bij deployment en cloudbeveiliging, en coaching van junior ontwikkelaars.",
+        "description": "Bij Atrias trok ik de ontwikkeling van een testtool in de cloud voor de Belgische energiemarkt. Daarmee kon het team nagaan of het Central Market System correct werkte en grote hoeveelheden berichten aankon. Ik werkte de applicatie- en cloudarchitectuur uit, bouwde mee tot aan de oplevering en ondersteunde de klant bij deployment en beveiliging. Daarnaast begeleidde ik junior ontwikkelaars.",
         "technologies": ".NET, React, PostgreSQL, Azure, Terraform, Docker, Azure DevOps."
       },
       {
         "company": "SESVanderHave",
         "role": "Full-stack developer & Scrum master",
         "dates": "Juli 2018–oktober 2020",
-        "description": "Ik ontwikkelde functies voor een R&D-platform voor suikerbietenveredeling, genetica, zaadbeheer en geautomatiseerd zaaien. Daarnaast coachte ik collega-ontwikkelaars en hielp ik het team via Scrum zijn manier van werken te verbeteren.",
+        "description": "Bij SESVanderHave bouwde ik mee aan een R&D-platform voor de ontwikkeling van nieuwe suikerbietenrassen. Ik werkte aan functies voor onder meer genetica, zaadbeheer en geautomatiseerd zaaien. Daarnaast coachte ik collega’s en hielp ik het team om via Scrum steeds beter samen te werken.",
         "technologies": ".NET Core, Angular, Oracle."
       }
     ],
@@ -102,38 +102,38 @@
       }
     ],
     "storyTitle": "Een applicatie vernieuwen",
-    "storyLink": "Lees het projectverhaal",
+    "storyLink": "Hoe ik dat aangepakt heb",
     "story": [
-      "Een applicatie die als proof of concept begon, was in productie genomen. Naarmate het gebruik toenam, ondervonden gebruikers problemen en stonden de oorspronkelijke technische keuzes gewenste functies in de weg.",
-      "Ik verzamelde gebruikersproblemen en featureverzoeken, werkte de functionele en technische analyse uit en ontwierp de cloudarchitectuur, het domeinmodel en de API’s. Ik overtuigde de leiding van de noodzaak tot vernieuwing en bouwde en leverde de vervangende applicatie vervolgens zelf op.",
-      "De nieuwe applicatie verbeterde de beveiliging en de gebruikerservaring, maakte eerder geblokkeerde functies mogelijk en stelde de toepassing open voor externe klanten. Ze werd ontworpen om verder uit te breiden en op te schalen."
+      "Een proof of concept was onder tijdsdruk in gebruik genomen als volwaardige applicatie. Na verloop van tijd kwamen de beperkingen naar boven: gebruikers liepen vast en sommige gevraagde functies waren met de bestaande opbouw niet mogelijk.",
+      "Ik bracht de problemen en wensen van gebruikers in kaart en werkte de functionele en technische analyse uit, van cloudarchitectuur tot domeinmodel en API’s. Ik overtuigde het management om tijd vrij te maken voor de vernieuwing. Daarna nam ik de volledige bouw en oplevering zelf voor mijn rekening.",
+      "De nieuwe applicatie was beter beveiligd en aangenamer in gebruik. Functies die voordien niet mogelijk waren, konden we nu wel bouwen. Ook externe klanten konden ermee aan de slag. De opbouw liet bovendien ruimte om verder uit te breiden en op te schalen."
     ],
-    "contact": "Laten we het over je team hebben."
+    "contact": "Kan ik iets betekenen voor je team?"
   },
   "printing": {
     "title": "3D-printen",
-    "metaDescription": "3D-printwerk op maat met Laurens bij Heartbit: bestaande modellen printen, ontwerpen vanuit een idee, prototypes en vervangonderdelen.",
+    "metaDescription": "Iets laten 3D-printen? Ik help met bestaande modellen, een ontwerp op maat, prototypes en vervangonderdelen.",
     "eyebrow": "02 / 3D-PRINTEN",
-    "heading": "Van een idee naar iets tastbaars",
-    "intro": "Heb je een model dat klaar is om te printen, of een idee dat nog een ontwerp nodig heeft? Ik help met ontwerpen op maat, prototypes, vervangonderdelen en het printen van bestaande modellen.",
-    "action": "Bespreek een idee",
+    "heading": "Van idee tot 3D-print",
+    "intro": "Heb je een 3D-model dat je wil laten printen? Of een idee, maar nog geen ontwerp? Ik help je graag verder, van een eerste prototype tot een vervangonderdeel of iets helemaal op maat.",
+    "action": "Vertel me je idee",
     "subject": "Heartbit: een idee voor een 3D-print",
     "exampleEyebrow": "EEN ONTWERP OP MAAT",
-    "exampleTitle": "Een houder voor dagelijks gebruik",
+    "exampleTitle": "Een handige houder voor een voedingspomp",
     "example": [
-      "De ouders van een peuter die een voedingspomp gebruikt, zochten een houder voor zowel de pomp als het voedingsreservoir. Die moest in een kleine rugzak passen voor onderweg en makkelijk aan een wieg of bed bevestigd kunnen worden voor nachtelijke voedingen.",
-      "Ik ontwierp, prototypeerde en leverde een meerdelige 3D-geprinte constructie op die op die behoeften was afgestemd.",
-      "We besloten het model ook open-source te maken en gratis beschikbaar te stellen aan andere ouders in een vergelijkbare situatie."
+      "De ouders van een peuter met een voedingspomp zochten een handige manier om de pomp en de fles met sondevoeding bij elkaar te houden. De houder moest in een kleine rugzak passen voor onderweg, maar ook makkelijk aan het bedje vastgemaakt kunnen worden voor voedingen ’s nachts.",
+      "Ik werkte hun idee uit tot een ontwerp, maakte prototypes en bouwde uiteindelijk een houder uit verschillende 3D-geprinte onderdelen.",
+      "We hebben het model ook open-source gemaakt. Zo kunnen andere ouders die met dezelfde vraag zitten het gratis gebruiken."
     ],
     "model": "Bekijk het model op MakerWorld",
-    "contactTitle": "Vertel me wat je in gedachten hebt.",
+    "contactTitle": "Wat zou je willen maken?",
     "contact": "Heb je al een model, schets of foto? Stuur die gerust mee in je mail."
   },
   "notFound": {
     "title": "Pagina niet gevonden",
-    "metaDescription": "Dit pad loopt dood. Ga terug naar Heartbit en kies een andere route.",
-    "eyebrow": "404 / BUITEN DE KAART",
-    "heading": "Even van het pad af.",
-    "description": "Hier is geen pagina. Laten we je terugbrengen naar vertrouwd terrein."
+    "metaDescription": "Deze pagina bestaat niet. Ga naar de homepagina van Heartbit om verder te kijken.",
+    "eyebrow": "404 / EVEN VERDWAALD",
+    "heading": "Oeps, hier staat niets.",
+    "description": "Deze pagina bestaat niet. Via de homepagina vind je vast wat je zoekt."
   }
 }
